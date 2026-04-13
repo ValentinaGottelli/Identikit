@@ -1,0 +1,181 @@
+:root {
+  --deep-twilight: #03045e;
+  --french-blue: #023e8a;
+  --bright-teal-blue: #0077b6;
+  --blue-green: #0096c7;
+  --turquoise-surf: #00b4d8;
+  --sky-aqua: #48cae4;
+  --frosted-blue: #90e0ef;
+  --frosted-blue-2: #ade8f4;
+  --light-cyan: #caf0f8;
+}
+
+body {
+  background-image:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url('https://wallpapercave.com/wp/wp4790166.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  list-style: none;
+  margin: 0;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: #0096c7;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--light-cyan);
+  font-family: sans-serif;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.navbar a:hover {
+  color: var(--turquoise-surf);
+}
+
+.nav-img {
+    width: 28px;
+    height: 28px;
+    border-radius: 30%;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 1.5rem;
+}
+
+main img {
+  width: 280px;
+  border-radius: 12px;
+}
+
+.separator {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 0;
+}
+
+.redes-titulo {
+  color: var(--light-cyan);
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.redes {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.redes img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+
+.redes img:hover {
+  transform: scale(1.2);
+}
+
+main p {
+  max-width: 500px;
+  text-align: center;
+  color: var(--light-cyan);
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.card {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  background-color: #023d8a83;
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-width: 700px;
+}
+
+.card img {
+  width: 200px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.card-texto h2 {
+  color: var(--sky-aqua);
+  font-family: sans-serif;
+  margin: 0 0 0.75rem 0;
+}
+
+.card-texto p {
+  color: var(--light-cyan);
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  text-align: left;
+}
+
+.titulo-tabla {
+  color: var(--sky-aqua);
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.tabla-juegos {
+  border-collapse: collapse;
+  max-width: 700px;
+  width: 100%;
+  font-family: sans-serif;
+  color: var(--light-cyan);
+}
+
+.tabla-juegos th {
+  background-color: rgba(0, 150, 199, 0.8);
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.tabla-juegos td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(72, 202, 228, 0.3);
+  vertical-align: middle;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.tabla-juegos tr {
+  background-color: rgba(2, 62, 138, 0.6);
+}
+
+.tabla-juegos tr:hover {
+  background-color: rgba(0, 180, 216, 0.2);
+}
+
+.tabla-juegos td img {
+  width: 150px;
+  border-radius: 50px;
+}
