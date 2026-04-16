@@ -68,6 +68,12 @@ main img {
   border-radius: 12px;
 }
 
+main h2 {
+  color: var(--sky-aqua);
+  font-family: sans-serif;
+  margin: 0 0 0.75rem 0;
+}
+
 .separator {
   width: 100%;
   max-width: 300px;
@@ -78,6 +84,12 @@ main img {
   color: var(--light-cyan);
   font-family: sans-serif;
   font-size: 1.1rem;
+  margin: 0;
+}
+
+.titulo {
+  color: var(--sky-aqua);
+  font-family: sans-serif;
   margin: 0;
 }
 
@@ -118,7 +130,7 @@ main p {
 }
 
 .card img {
-  width: 200px;
+  width: 300px;
   border-radius: 8px;
   flex-shrink: 0;
 }
@@ -129,6 +141,14 @@ main p {
   margin: 0 0 0.75rem 0;
 }
 
+.card-texto a {
+  text-decoration: none;
+  color: var(--light-cyan);
+  font-family: sans-serif;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
 .card-texto p {
   color: var(--light-cyan);
   font-family: sans-serif;
@@ -136,6 +156,16 @@ main p {
   line-height: 1.6;
   margin: 0;
   text-align: left;
+}
+
+.card-texto-juego a {
+  color: var(--sky-aqua);
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  text-decoration: none;
 }
 
 .titulo-tabla {
@@ -180,12 +210,12 @@ main p {
   border-radius: 50px;
 }
 
-.aside {
-    background-color: rgb(244, 249, 0);
-    width: 25%;
+.img-juego {
+  width: 150px;
+  border-radius: 50px;
 }
-.aside, .main {
-    display: inline-block;
-    vertical-align: top;
-    height: 80vh;
+.preguntas {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
 }
